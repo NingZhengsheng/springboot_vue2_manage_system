@@ -1,7 +1,7 @@
 <!-- START doctoc -->
 <!-- END doctoc -->
 
-> > 1. 下载好IDEA开发工具（IntelliJ IDEA）；
+> 1. 下载好IDEA开发工具（IntelliJ IDEA）；
 > 2. Mysql数据库（Navicat for MySQL）；
 
 # 一、创建Vue项目
