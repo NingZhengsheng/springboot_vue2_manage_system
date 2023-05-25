@@ -1,0 +1,29 @@
+# 1.配置数据库
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/springboot_vue?serverTimezone=GMT%2b8
+    username: root
+    password: 123456
+
+
+# 2.配置端口
+server:
+  port: 9090
+
+
+# 3.配置 mybatis(不然springboot找不到mybatis对应的.xml文件)
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+
+# 4. 配置 mybatis-plus
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.example.demo.entity
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #打印出sql执行的结果
+
+# 5. 设置文件保存路径
+files:
+  upload:
+    path: E:/javaWebProject/springBoot_vue_project/upload_files/
